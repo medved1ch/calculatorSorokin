@@ -23,9 +23,9 @@
         <Label x:Name="Lb0" Content="0" HorizontalAlignment="Left" Margin="185,221,0,0" VerticalAlignment="Top"/>
         <Button x:Name="TxClear" Content="C" HorizontalAlignment="Left" Margin="164,365,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.716,2.151" Click="Button_Click"/>
         <Button Content="sqrt" HorizontalAlignment="Left" Margin="48,365,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.716,2.151" Click="Button_Click_11"/>
-        <Button Content="^n" HorizontalAlignment="Left" Margin="244,340,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.716,2.151" Click="Button_Click_10"/>
-        <Button Content="√^n" HorizontalAlignment="Left" Margin="244,315,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.716,2.151" Click="Button_Click_10"/>
+        <Button x:Name="btnCorStep" Content="√^n" HorizontalAlignment="Left" Margin="244,315,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.716,2.151" Click="Button_Click_10"/>
         <Button Content="Close" HorizontalAlignment="Left" Margin="23,15,0,0" VerticalAlignment="Top" Width="44" RenderTransformOrigin="0.716,2.151" Click="Button_Click_2"/>
+        <Button x:Name="btnStep" Content="^n" HorizontalAlignment="Left" Height="20" Margin="244,340,0,0" VerticalAlignment="Top" Width="32" Click="btnStep_Click"/>
 
     </Grid>
 </Window>

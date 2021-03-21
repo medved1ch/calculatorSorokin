@@ -208,5 +208,20 @@ Lb0.Content = Math.Sqrt(Convert.ToDouble(Tx1.Text));
         {
             e.Handled = "1234567890,".IndexOf(e.Text) < 0;
         }
+
+        private void btnStep_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Lb0.Content = Math.Pow(Convert.ToDouble(Tx1.Text),  Convert.ToDouble(Tx2.Text));
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Иди за учебником математики,неуч");
+                Tx2.Clear();
+                Tx1.Clear();
+                Lb0.Content = "0";
+            }
+        }
     }
 }
