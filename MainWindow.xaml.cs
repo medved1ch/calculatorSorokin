@@ -90,7 +90,14 @@ Lb0.Content = double.Parse(Tx1.Text) * double.Parse(Tx2.Text);
         {
             try
             {
-Lb0.Content = double.Parse(Tx1.Text) + 0.1;
+                if (Tx2.Text == "")
+                {
+                    Lb0.Content = double.Parse(Tx1.Text) / 100;
+                }
+                else
+                {
+                    Lb0.Content = double.Parse(Tx1.Text) * double.Parse(Tx2.Text) / 100;
+                }
             }
             catch (FormatException)
             {
